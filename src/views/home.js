@@ -10,7 +10,8 @@ const Home = (props) => {
   return (
     <div className="home-container">
       <Helmet>
-        <title>Primary Sweltering Weasel</title>
+        <title>The LocalMart 
+          </title>
         <meta property="og:title" content="Primary Sweltering Weasel" />
       </Helmet>
       <div className="home-header">
@@ -18,7 +19,8 @@ const Home = (props) => {
           data-thq="thq-navbar"
           className="navbarContainer home-navbar-interactive"
         >
-          <span className="logo">LOCALMART</span>
+          <span className="logo">The LocalMart 
+</span>
           <div data-thq="thq-navbar-nav" className="home-desktop-menu">
             <nav className="home-links">
               <span className="bodySmall">Home</span>
