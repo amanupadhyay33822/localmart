@@ -5,6 +5,7 @@ import { Helmet } from "react-helmet";
 import FeatureCard from "../components/feature-card";
 import Question1 from "../components/question1";
 import "./home.css";
+import { Link } from "react-router-dom/cjs/react-router-dom";
 
 const Home = (props) => {
   return (
@@ -28,10 +29,16 @@ const Home = (props) => {
                 {" "}
                 <span className="home-nav42 bodySmall">Sign Up</span>{" "}
               </a>
-              <span className="home-nav52 bodySmall">Login</span>
+              <Link to={"/login"}>
+                {" "}
+                <span className="home-nav52 bodySmall">Login</span>{" "}
+              </Link>
             </nav>
             <div className="home-buttons">
-              <button className="home-login buttonFlat">Login</button>
+              <Link to={"/login"}>
+                {" "}
+                <button className="home-login buttonFlat">Login</button>{" "}
+              </Link>
               <button className="buttonFilled">Register</button>
             </div>
           </div>
@@ -61,11 +68,16 @@ const Home = (props) => {
                 <span className="home-nav221 bodySmall">Shops</span>
                 <span className="home-nav321 bodySmall">Contact</span>
                 <span className="home-nav421 bodySmall">Sign Up</span>
-                <span className="home-nav521 bodySmall">Login</span>
+                <Link to={"/login"}>
+                  {" "}
+                  <span className="home-nav521 bodySmall">Login</span>
+                </Link>
               </nav>
               <div className="home-buttons1">
-                <button className="buttonFlat">Login</button>
-                <button className="buttonFilled">Register</button>
+                <Link to={"/login"}>
+                  <button className="buttonFlat">Login</button>
+                </Link>
+                {/* <button className="buttonFilled">Register</button> */}
               </div>
             </div>
             <div>
@@ -161,6 +173,7 @@ const Home = (props) => {
                 </span>
               </span>
             </span>
+
             <div className="home-btn-group">
               <button className="buttonFilled">Explore Shops</button>
               <button className="buttonFlat">Learn More →</button>
