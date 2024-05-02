@@ -39,7 +39,7 @@ const Home = (props) => {
                 {" "}
                 <button className="home-login buttonFlat">Login</button>{" "}
               </Link>
-              <button className="buttonFilled">Register</button>
+            <link to={"/register"}>  <button className="buttonFilled">Register</button></link>
             </div>
           </div>
           <div data-thq="thq-burger-menu" className="home-burger-menu">
