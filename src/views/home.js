@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 import FeatureCard from "../components/feature-card";
 import Question1 from "../components/question1";
 import "./home.css";
-import { Link } from "react-router-dom/cjs/react-router-dom";
+import { Link } from "react-router-dom";
 
 const Home = (props) => {
   return (
@@ -39,7 +39,7 @@ const Home = (props) => {
                 {" "}
                 <button className="home-login buttonFlat">Login</button>{" "}
               </Link>
-            <link to={"/register"}>  <button className="buttonFilled">Register</button></link>
+            <Link to={"/register"}>  <button className="buttonFilled">Register</button></Link>
             </div>
           </div>
           <div data-thq="thq-burger-menu" className="home-burger-menu">
