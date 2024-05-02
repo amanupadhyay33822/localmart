@@ -23,7 +23,7 @@ const Home = (props) => {
           <div data-thq="thq-navbar-nav" className="home-desktop-menu">
             <nav className="home-links">
               <span className="bodySmall">Home</span>
-              <span className="home-nav22 bodySmall">Shops</span>
+              <Link to="/shops"> <span className="home-nav22 bodySmall">Shops</span></Link> 
               <span className="home-nav32 bodySmall">Contact</span>
               <a href="">
                 {" "}
@@ -175,7 +175,7 @@ const Home = (props) => {
             </span>
 
             <div className="home-btn-group">
-              <button className="buttonFilled">Explore Shops</button>
+             <Link to={"/shops"}> <button className="buttonFilled">Explore Shops</button></Link>
               <button className="buttonFlat">Learn More →</button>
             </div>
           </div>
